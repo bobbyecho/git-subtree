@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "lib": ["es2019", "dom"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "declaration": true,
+    "rootDir": "./src",
+    "types": [
+      "node",
+      "webdriverio/async"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@screenplay/*": ["./src/screenplay/*"]
+    }
+  },
+  "include": [
+    "src/features/**/*.ts",
+    "src/typings/wdio.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
